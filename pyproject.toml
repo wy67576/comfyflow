@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfyflow"
+version = "0.1.0"
+description = "Control ComfyUI from the command line — submit workflows, generate video/images, all without the browser."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["comfyui", "ai", "video-generation", "stable-diffusion", "cli"]
+
+authors = [
+    { name = "wy67576" },
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Video",
+]
+
+[project.scripts]
+comfyflow = "comfyflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["comfyflow*"]
