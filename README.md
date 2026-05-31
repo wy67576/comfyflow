@@ -4,15 +4,26 @@
 
 **Control ComfyUI from your terminal — no browser needed.**
 
-`comfyflow` is a Python CLI + SDK for programmatically submitting workflows to [ComfyUI](https://github.com/comfyanonymous/ComfyUI).  
+[![PyPI version](https://img.shields.io/pypi/v/comfyflow-cli?color=blue)](https://pypi.org/project/comfyflow-cli/)
+[![Python versions](https://img.shields.io/pypi/pyversions/comfyflow-cli)](https://pypi.org/project/comfyflow-cli/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/wy67576/comfyflow?style=social)](https://github.com/wy67576/comfyflow)
+
+`comfyflow-cli` is a Python CLI + SDK for programmatically submitting workflows to [ComfyUI](https://github.com/comfyanonymous/ComfyUI).  
 Write a prompt, run a command, get your video. Designed and tested on **8GB VRAM GPUs**.
 
 ```bash
-pip install comfyflow
+pip install comfyflow-cli
 comfyflow generate --template wan_t2v --prompt "a cat walking in a cyberpunk city" --wait
 ```
 
 </div>
+
+---
+
+## Demo
+
+*Coming soon* — demo GIF showing `comfyflow generate --template wan_t2v --prompt "..."` in action.
 
 ---
 
@@ -43,7 +54,11 @@ Perfect for batch jobs, CI pipelines, scripts, and headless servers.
 ### 1. Install
 
 ```bash
-pip install comfyflow
+# Via PyPI (once approved)
+pip install comfyflow-cli
+
+# Via GitHub Releases (works now)
+pip install https://github.com/wy67576/comfyflow/releases/download/v0.1.0/comfyflow_cli-0.1.0-py3-none-any.whl
 ```
 
 ### 2. Generate your first video
